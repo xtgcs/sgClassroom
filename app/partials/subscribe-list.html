@@ -1,0 +1,36 @@
+<div class="subscribe">
+    <div class="subscribe-top">
+        <div class="portrait">
+            <img class="head-portrait" ng-src={{column.user.icon}} alt="">
+        </div>
+        <div class="name">
+            <span>{{column.user.nick}}</span>
+        </div>
+        <div class="introduce">
+            {{column.desc}}
+        </div>
+        <div class="details">
+            <span ui-sref="introduce({id:column.id})">课堂详情</span>
+        </div>
+    </div>
+    <div class="subscribe-list">
+        <ul  infinite-scroll="loadMore()" infinite-scroll-distance="3">
+            <li ng-repeat="list in data" ng-click="showDetail($index)">
+                <div class="list-img">
+                    <img class="list-cover" ng-src="{{list.cover.url + '?imageView2/1/w/260/h/224'}}" alt="">
+                </div>
+                <div class="information">
+                    <p class="article-title">
+                        {{list.title}}
+                    </p>
+                    <p class="time">
+                        {{formatDate(list.ct)}}
+                    </p>
+                    <p class="digest">
+                        {{list.desc}}
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

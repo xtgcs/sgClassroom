@@ -1,0 +1,178 @@
+.Comment .CommentsHeader{
+    width: 100%;
+    padding: 0.12rem  0.16rem 0.10rem 0.16rem;
+    box-sizing: border-box;
+    height: 0.44rem;
+
+    border-bottom: 0.01rem solid #BCADAA;
+    box-shadow: 0 0 0 0 #B2B2B2;
+}
+
+.Comment .CommentsHeader .CommentsTips{
+    text-align: center;
+    position: relative;
+}
+.Comment .CommentsHeader .CommentsTips span{
+    font-family: PingFangSC-Regular;
+
+}
+.Comment .CommentsHeader .CommentsTips span:nth-child(1){
+    position: absolute;
+     left: 0;
+    width: 0.09rem;
+    height: 0.14rem;
+    display: inline-block;
+}
+.Comment .CommentsHeader .CommentsTips span:nth-child(1)>img{
+    width: 100%;
+    height: 100%;
+}
+.Comment .CommentsHeader .CommentsTips span:nth-child(2){
+
+    font-size: 0.17rem;
+    color: #B0754F;
+}
+.Comment .CommentsHeader .CommentsTips span:nth-child(3){
+    position: absolute;
+    right: 0;
+    font-size: 0.16rem;
+    color: #BCADAA;
+}
+.Comment .commentArea{
+    width: 100%;
+    height: 2.15rem;
+    padding:0.16rem ;
+    box-sizing: border-box;
+   /*border:  1px solid red;*/
+}
+.comment-image-container{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.15rem;
+    float: left;
+}
+.comment-image-container>img{
+    width: 100%;
+    height: 100%;
+}
+
+.Comment .commentArea textarea:focus{
+    font-family: PingFangSC-Regular;
+
+    color: #2A2A2A;
+    letter-spacing: 0.02rem;
+    line-height: .24rem;
+}
+.Comment .commentArea textarea{
+    font-family: PingFangSC-Regular;
+    line-height: .24rem;
+    font-size: .16rem;
+    letter-spacing: 0.02rem;
+    color: #2A2A2A;
+    outline: none;
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Comment .uploadPhoto{
+    width: 1.2rem;
+    height: 1.2rem;
+    /*border: 0.01rem solid red;*/
+    margin-left: 0.16rem;
+    position: relative;
+    display: inline-block;
+    background: #FAFAFA;
+    overflow: hidden;
+    color: #1E88C7;
+    text-align: center;
+    float: left;
+
+}
+.Comment .uploadPhoto >img{
+    width: 100%;
+    height: 100%;
+}
+.Comment .uploadPhoto input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.Comment .uploadPhoto span{
+    font-size: 0.9rem;
+    color: darkgray;
+    margin-top: -.2rem;
+    display: inline-block;
+}
+
+/*上传图片的样式*/
+.upPhoto{
+    /*display: none;*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+
+}
+.upPhoto .darkBack{
+    width: 100%;
+    height: 4.58rem;
+    background:rgba(0,0,0,0.20);
+}
+
+.upPhoto .column-subscribe{
+    width: 100%;
+    height:2.41rem;
+    background-color: #FFFFFF;
+}
+.upPhoto .next-container .photo{
+    position: relative;
+    display: block;
+    background: #FAFAFA;
+    overflow: hidden;
+    color: #1E88C7;
+    text-align: center;
+}
+.upPhoto .next-container .photo input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.upPhoto .next-container .photo , .next-container .cancel ,.upPhoto .next-container .takePicture{
+    width: 100%;
+    height: 0.6rem;
+    text-align: center;
+
+    font-family: PingFangSC-Medium;
+    letter-spacing: 0;
+    line-height: .6rem;
+    background-color: #FAFAF9;
+}
+.upPhoto .next-container .takePicture {
+    border-bottom: 0.01rem solid #F4F1F0;
+}
+.upPhoto .next-container .takePicture span {
+    color: #491F18;
+    font-size: .17rem;
+}
+.upPhoto .next-container .photo span{
+    color: #491F18;
+    font-size: .17rem;
+}
+.upPhoto .next-container .cancel span{
+    color: #5798D9;
+    font-size: .17rem;
+}
+.upPhoto .next-container .line{
+    width: 100%;
+    height: 0.04rem;
+    background: #EAE7E6;
+}

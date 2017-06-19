@@ -1,0 +1,313 @@
+.clickComment .clickCommentHeader{
+    width: 100%;
+    padding: 0.12rem  0.16rem 0.10rem 0.16rem;
+    box-sizing: border-box;
+    height: 0.44rem;
+    border-bottom: 0.01rem solid #BCADAA;
+    box-shadow: 0 0 0 0 #B2B2B2;
+}
+
+.clickComment .clickCommentHeader .CommentsTips{
+    text-align: center;
+    position: relative;
+}
+.clickComment .clickCommentHeader .CommentsTips span{
+    font-family: PingFangSC-Regular;
+
+}
+.clickComment .clickCommentHeader .CommentsTips span:nth-child(1){
+    position: absolute;
+    left: 0;
+    top: -0.018rem;
+    width: 0.09rem;
+    height: 0.14rem;
+}
+.clickComment .clickCommentHeader .CommentsTips span:nth-child(1)>img{
+    width: 100%;
+    height: 100%;
+}
+.clickComment .clickCommentHeader .CommentsTips span:nth-child(2){
+
+    font-size: 0.17rem;
+    color: #B0754F;
+}
+.clickComment .clickCommentHeader .CommentsTips span:nth-child(3){
+    position: absolute;
+    right: 0;
+    font-size: 0.16rem;
+    color: #492824 ;
+
+}
+/*头部样式结束*/
+@font-face {
+    font-family: 'iconfont';  /* project id 153165 */
+    src: url('//at.alicdn.com/t/font_cnpvs4tfriorbe29.eot');
+    src: url('//at.alicdn.com/t/font_cnpvs4tfriorbe29.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_cnpvs4tfriorbe29.woff') format('woff'),
+    url('//at.alicdn.com/t/font_cnpvs4tfriorbe29.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_cnpvs4tfriorbe29.svg#iconfont') format('svg');
+}
+.clickComment{
+    /*width: 100%;*/
+    /*!*padding: 0 0.16rem;*!*/
+    /*box-sizing: border-box;*/
+}
+.clickComment  .commentDetails {
+    /*border-bottom: 0.01rem solid #F4F1F0;*/
+    /*padding-bottom: 0.16rem;*/
+    width: 100%;
+    padding:  0.16rem;
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #F4F1F0;
+    position: relative;
+
+}
+
+.clickComment  .commentDetails .commentStatus{
+    position: absolute;
+    height: 100%;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(234,231,230,0.90);
+
+
+}
+.clickComment  .commentDetails .commentStatus .up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 0.6rem;
+
+    list-style: none;
+    line-height: 0.3rem;
+    box-sizing: border-box;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+
+}
+.clickComment  .commentDetails .commentStatus .up li{
+    display: inline-block;
+
+}
+.clickComment  .commentDetails .commentStatus .up li:nth-child(2){
+   margin: 0 0.52rem;
+
+}
+.clickComment  .commentDetails .commentStatus .up li div:nth-child(1){
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: #EAE7E6;
+    line-height: 0.4rem;
+    font-family: iconfont;
+    font-size: 0.18rem;
+    color: white;
+}
+.clickComment  .commentDetails .commentStatus .up li div.assist{
+    border: 0.01rem solid #E97544;
+    color: #E97544;
+}
+.clickComment  .commentDetails .commentStatus .up li div.discuss{
+    border: 0.01rem solid #E97544;
+    color: #E97544;
+}
+.clickComment  .commentDetails .commentStatus .up li div.praise{
+    background: #E97544;
+    color: white;
+}
+
+.clickComment  .commentDetails .commentStatus .up .special div:nth-child(1) {
+    background: #977B77;
+
+}
+.clickComment  .commentDetails .commentStatus .up li div:nth-child(2){
+    color: #515151;
+}
+
+
+.clickComment  .commentDetails .user{
+    position: relative;
+    font-family: PingFangSC-Regular;
+
+
+}
+.user .userBox{
+    margin-top: .0rem;
+}
+.clickComment  .commentDetails .user .userImg{
+    border-radius: 50%;
+    width: 0.40rem;
+    height: 0.40rem;
+    vertical-align: middle;
+    margin-top: -0.2rem;
+}
+
+.clickComment  .commentDetails .user .userInfo{
+    display: inline-block;
+    margin-top: .04rem;
+    margin-left: .1rem;
+}
+
+.clickComment  .commentDetails .user .netName{
+    font-size: 0.13rem;
+    letter-spacing: 0;
+    line-height: 0.18rem;
+    font-family: PingFangSC-Regular;
+    color: #B0754F;
+}
+.clickComment  .commentDetails .user .commentTime{
+    font-size: .1rem;
+    letter-spacing: 0;
+    line-height: .12rem;
+    margin-top: 0.05rem;
+    margin-bottom: 0.06rem;
+    font-family: PingFangSC-Regular;
+    color: #888888;
+}
+.clickComment .commentDetails .loveCount{
+    display: inline-block;
+    float: right;
+    margin-left: .04rem;
+}
+.clickComment  .commentDetails .user .love{
+    height: 0.3rem;
+    /*border: 1px solid red;*/
+    display: inline-block;
+    float: right;
+    margin-top: .08rem;
+}
+.clickComment  .commentDetails .user .icon{
+    font-family: 'iconfont';
+    width: .2rem;
+    height: 0.2rem;
+    font-size: 0.20rem;
+    color: #AEAEAE;
+    display: inline-block;
+}
+
+ .love .icon-active {
+    font-family: 'iconfont';
+    width: .2rem;
+    height: 0.2rem;
+    font-size: 0.20rem;
+    color: #AEAEAE;
+     display: inline-block;
+}
+ .love .icon {
+    font-family: 'iconfont';
+    width: .2rem;
+    height: 0.2rem;
+    font-size: 0.20rem;
+    color: #AEAEAE;
+     display: inline-block;
+}
+.love .icon img.click {
+    display: none;
+}
+.love .icon-active img.default {
+    display: none;
+}
+.love .click{
+    width: .16rem;
+    height: .16rem;
+}
+.love .default{
+    width: .16rem;
+    height: .16rem;
+}
+
+.clickComment  .commentDetails .user .commentsContent {
+    margin-left: 0.53rem ;
+}
+.clickComment  .commentDetails .user .commentsContent div{
+    font-size: 0.14rem;
+    color: #646464;
+    letter-spacing: 0.01rem;
+    line-height: 0.24rem;
+    font-family: PingFangSC-Regular;
+}
+/*评论区的图片样式*/
+.clickComment  .commentDetails .user .ImageAreas{
+    padding-left: 0.5rem;
+    padding-top: 0.08rem;
+}
+.clickComment  .commentDetails .user .ImageAreas img{
+    height: 0.88rem;
+    width: 0.88rem;
+}
+.clickComment  .commentDetails .user .ImageAreas img:nth-child(2){
+    margin: 0 0.12rem;
+}
+
+    /*举报用户的状态样式*/
+
+.reportUser{
+    /*display: none;*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+}
+.reportUser .darkBack{
+    width: 100%;
+    height: 4.58rem;
+    background:rgba(0,0,0,0.20);
+}
+
+.reportUser .column-subscribe{
+    width: 100%;
+    height:2.41rem;
+    background-color: #FFFFFF;
+}
+.reportUser .next-container .photo{
+    position: relative;
+    display: block;
+    background: #FAFAFA;
+    overflow: hidden;
+    color: #1E88C7;
+    text-align: center;
+}
+.reportUser .next-container .photo input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.reportUser .next-container .photo , .next-container .cancel ,.reportUser .next-container .takePicture{
+    width: 100%;
+    height: 0.6rem;
+    text-align: center;
+    font-size: .17rem;
+    font-family: PingFangSC-Medium;
+    letter-spacing: 0;
+    line-height: .6rem;
+
+    background-color: #FAFAF9;
+}
+
+.reportUser .next-container .takePicture {
+    color: #515151;
+    font-size: 0.12rem;
+    border-bottom: 0.01rem solid #F4F1F0;
+}
+.reportUser .next-container .photo span{
+    color: #FF5031;
+}
+.reportUser .next-container .cancel span{
+    color: #5798D9;
+}
+.reportUser .next-container .line{
+    width: 100%;
+    height: 0.04rem;
+    background: #EAE7E6;
+}

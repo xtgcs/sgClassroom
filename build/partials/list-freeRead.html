@@ -1,0 +1,17 @@
+
+<div class="item">
+    <ul class="item_ul">
+        <li  ng-repeat="list in data" ng-click="showDetail($index)">
+            <p class="title">{{list.title}}</p>
+            <p class="nameTime">
+                <span class="label">免费试读</span><span class="time">{{formatDate(list.ct)}}</span>
+            </p>
+            <img ng-src="{{list.cover.url + '?imageView2/1/w/654/h/320'}}">
+            <p class="name">{{list.desc}}</p>
+            <div class="fullbox">
+                <span class="full">阅读全文</span>
+            </div>
+        </li>
+    </ul>
+</div>
+

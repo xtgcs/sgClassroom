@@ -1,0 +1,113 @@
+.subscribe{
+    width: 100%;
+    height: 100%;
+    background: #F5F5F5;
+}
+.subscribe .subscribe-top{
+    background: #FFFFFF;
+    border: 1px solid #fff;
+}
+.portrait{
+    text-align: center;
+    margin: 0.16rem 0;
+}
+.portrait .head-portrait{
+    width:0.74rem;
+    height: 0.74rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.subscribe-top .name{
+    text-align: center;
+}
+.subscribe-top .name span{
+    font-family: PingFangSC-Regular;
+    font-size: 0.18rem;
+    color: #6D504B;
+    letter-spacing: 0;
+    line-height:0.18rem;
+}
+.subscribe-top .introduce{
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #7D7D7D;
+    letter-spacing: 0;
+    line-height: .12rem;
+    margin: 0.08rem 0 0.12rem 0;
+
+}
+.subscribe-top .details{
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+.subscribe-top .details span{
+    border: 1px solid #E3B795;
+    border-radius: 4px;
+    width: 0.8rem;
+    height: 0.25rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.13rem;
+    color: #E3B795;
+    padding: 0.03rem 0.1rem;
+}
+
+.subscribe .subscribe-list{
+    margin-top: 0.08rem;
+    width: 100%;
+    border: 1px solid #fff;
+}
+.subscribe .subscribe-list>ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.subscribe-list>ul>li{
+    background: #fff;
+    padding: 0.12rem;
+    margin-bottom: .03rem;
+}
+.subscribe-list li .list-img{
+    display: inline-block;
+}
+.subscribe-list li .list-img img.list-cover{
+    width: 1.3rem;
+    height: 1.12rem;
+    border-radius: .04rem;
+    -webkit-border-radius: .04rem;
+    -moz-border-radius: .04rem;
+}
+.subscribe-list li .information{
+    display: inline-block;
+    margin-left: .12rem;
+    height: 1.12rem;
+    vertical-align:top;
+    max-width: 2rem;
+    overflow: hidden;
+}
+.subscribe-list li .information .article-title{
+    font-family: PingFangSC-Regular;
+    font-size: .14rem;
+    line-height: .20rem;
+    height: .4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    color: #52321E;
+}
+.subscribe-list li .information .time{
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #777777;
+    line-height: .18rem;
+    margin: 0.12rem  0 0.26rem 0;
+}
+.subscribe-list li .information .digest{
+    font-family: PingFangSC-Light;
+    font-size: .13rem;
+    height: .36rem;
+    color: #666666;
+    line-height: .18rem;
+    overflow: hidden;
+}

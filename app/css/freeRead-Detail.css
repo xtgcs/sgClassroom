@@ -1,0 +1,617 @@
+.article-container{
+    width: 100%;
+    /*border: 1px solid transparent;*/
+
+}
+.article_box{
+    margin: 0 .16rem;
+}
+.article_box .topImg{
+    /*margin: 0 0.12rem;*/
+}
+.article-container .topImg img{
+    display: block;
+    height: 2rem;
+    width: 100%;
+}
+
+.article_box .bigTitle{
+    margin-top: .16rem;
+}
+.article_box .source{
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B0754F;
+}
+.article_box .from{
+    color: #888888;
+    font-style: normal;
+}
+.article_box .bigTitle p{
+    margin: 0;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    font-size: .18rem;
+    font-family: PingFangSC-Medium;
+    font-weight: bolder;
+    color: #000;
+    letter-spacing: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.article_box .introduce{
+    height: .18rem;
+    margin-top: .15rem;
+    margin-bottom: .28rem;
+}
+.introduce .author,.introduce .time{
+    font-family: PingFangSC-Regular;
+    font-size: .13rem;
+    color: #888888;
+}
+.introduce .time{
+    margin-left: .1rem;
+}
+.content-title{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding: .16rem;
+    margin-top: .26rem;
+
+}
+.content-title .logo{
+    box-sizing: border-box;
+    /*height: 0.75rem;*/
+    /*padding-top: .12rem;*/
+    /*padding-bottom: .12rem;*/
+    display: inline-block;
+}
+.article_box .logo_text{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: .15rem;
+    overflow: hidden;
+}
+.article_box .logo_text .life_name{
+    font-family: PingFangSC-Regular;
+    font-size: .16rem;
+    color: #2A2A2A;
+    letter-spacing: 0;
+    line-height: .18rem;
+}
+.article_box .logo_text .life_introduce{
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #646464;
+    letter-spacing: 0;
+    line-height: .1rem;
+    margin-top: 0.14rem;
+}
+.content-title .logo img{
+    width: .48rem;
+    height: .48rem;
+    border-radius: 50%;
+}
+.content-title .logo p{
+    font-family: PingFangSC-Regular;
+    display: inline-block;
+    font-size: .18rem;
+    color: #2A2A2A;
+    letter-spacing: 0;
+    font-weight: bold;
+    line-height: .18rem;
+
+}
+.article_box .epigraph{
+    padding: 0.07rem 0.15rem;
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #666666;
+    letter-spacing: 0;
+    line-height: .2rem;
+    background: #EEEEEE;
+    margin-top: .3rem;
+}
+.m{
+    width: 100%;
+}
+video{
+    width: 100%;
+    height: 2.5rem;
+    position: relative;
+}
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+.vjs-big-play-centered .vjs-big-play-button{
+    margin-top: -1.8em;;
+}
+.video-js .vjs-big-play-button{
+    width: 0.6rem;
+    height: .6rem;
+    line-height: .6rem;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.95;
+}
+
+.article-container .content-text {
+    width: 100%;
+    /*height: 4.5rem;*/
+    box-sizing: border-box;
+    /*padding-left: .12rem;*/
+    /*padding-right: .12rem;*/
+    padding-top: 0;
+}
+
+.article-container .content-text .text-details .smallTitle{
+    height: .18rem;
+    padding-top: .32rem;
+    padding-bottom: .32rem;
+    text-align: center;
+}
+
+.article-container .content-text  .text-details .smallTitle span{
+    font-size: .18rem;
+    font-family: PingFangSC-Regular;
+    color: #6D504B;
+    letter-spacing: 0;
+    line-height:.18rem;
+    font-weight: 800;
+}
+.article-container .content-text .text-details .smallTitle b{
+    display: inline-block;
+    width: .16rem;
+    height: .1rem;
+    vertical-align: 0.06rem;
+    border-bottom: 0.01rem solid #D5C7C6;
+}
+.article-container .content-text  .articleImg{
+    margin-top: 0.25rem;
+    /*margin-left: 0.12rem;*/
+}
+.article-container .content-text  .articleImg img{
+    width: 100%;
+    /*height: 2.047rem;*/
+    display: block;
+
+}
+.article-container .content-text  .articleAudio{
+    width: 3.43rem;
+    /*height: 2.20rem;*/
+}
+.article-container .content-text .mark div{
+    font-family: PingFangSC-Regular;
+    height: 0.14rem;
+    padding-top: 0.16rem;
+    font-size: 0.14rem;
+    color: #AEAEAE;
+    letter-spacing: 0;
+    line-height: 0.14rem;
+}
+.article-container .content-text .txt{
+    margin-top: 0.20rem;
+    font-family: PingFangSC-Regular;
+    font-size: .15rem;
+    color: #555555;
+    letter-spacing: 0;
+    line-height: .26rem;
+}
+.article-container .content-text .subTitle{
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: .18rem;
+    color: #6D504B;
+    letter-spacing: 0;
+    line-height: .18rem;
+}
+.article-container .content-text .subTitle>i{
+    width: 0.04rem;
+    height: 0.04rem;
+    background: #BCADAA;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 0.04rem;
+}
+.article-container .content-text .subTitle>i:nth-child(1){
+    margin-right: 0.08rem;
+}
+.article-container .content-text .subTitle>i:nth-child(2){
+    margin-left: 0.08rem;
+}
+
+.article-container .content-text .video{
+     margin-top: 0.15rem;
+     position: relative;
+ }
+.article-container .content-text .video .btn{
+    position: absolute;
+    left: 44%;
+    top: 42%;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    background: url("../image/video_play_button.png") no-repeat;
+    background-size: 0.4rem 0.4rem;
+}
+.article-container .urls {
+    width: 2.59rem;
+    /*margin-left: 0.16rem;*/
+    /*background-color: red;*/
+    height: 0.80rem;
+    font-weight: 800;
+    margin-bottom: 0.40rem;
+}
+.article-container .urls a{
+
+    font-family: PingFangSC-Regular;
+    text-decoration: none;
+    color: #3D6B99;
+    font-size: 0.16rem;
+    letter-spacing: 0;
+    line-height: 0.24rem;
+
+
+}
+.article-container .urls .pandaTea div{
+    margin-bottom: 0.32rem;
+    height: 0.24rem;
+    text-indent: 0.04rem;
+
+}
+.article-container .urls .sanlian div{
+    text-indent: 0.04rem;
+    line-height: 0.24rem;
+    height: 0.24rem;
+    width: 3.0rem;
+    background: rgba(85,164,243,0.10);
+
+}
+.article-container .actives{
+    width: 3.43rem;
+    height: 4.34rem;
+    border: 0.01rem solid #E4E4E4 ;
+    margin: 0 auto;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    color: #2E2E2E;
+    letter-spacing: 0;
+
+}
+.article-container .actives p{
+    margin: 0;
+}
+.article-container .actives .activesTime{
+    height: 1.26rem;
+
+}
+.article-container .actives .activesTime p:nth-child(1){
+    padding-top: 0.40rem;
+    font-size: 0.16rem;
+    font-weight: 800;
+}
+.article-container .actives .activesTime p:nth-child(2){
+    padding-top: 0.10rem;
+    font-size: 0.16rem;
+    font-weight: 800;
+}
+.article-container .actives .activesTime span{
+    margin: 0 auto;
+    display: block;
+    width: 0.16rem;
+    height: 0.24rem;
+    border-bottom: 0.01rem solid #D5C7C6;
+}
+.article-container .actives .activesWay{
+    height: 1.26rem;
+}
+.article-container .actives .activesWay p:nth-child(1){
+    font-size: 0.16rem;
+    margin-top:0;
+}
+.article-container .actives .activesWay p{
+    margin-top: 0.14rem;
+    font-size: 0.16rem;
+    font-weight: 800;
+}
+
+.article-container .actives .activesWay span{
+    margin: 0 auto;
+    display: block;
+    width: 0.16rem;
+    height: 0.29rem;
+    border-bottom: 0.01rem solid #D5C7C6;
+}
+.article-container .actives .activesAward{
+    height: 1.82rem;
+}
+.article-container .actives  .activesAward p:nth-child(1){
+    margin-top: 0.06rem;
+}
+.article-container .actives  .activesAward p{
+    margin-top: 0.14rem;
+    font-size: 0.16rem;
+    font-weight: 800;
+}
+.article-container .Labels{
+    box-sizing: border-box;
+    /*width: 100%;*/
+    /*height: 1.12rem;*/
+
+    margin: 0.32rem  0.05rem;
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #7D7D7D;
+
+}
+.article-container .Labels .labelsTally{
+    color: #B0754F;
+    font-size:0.12rem;
+}
+.article-container .Labels .tags ul{
+    list-style: none;
+
+    padding-left: 0;
+
+}
+.article-container .Labels .tags ul li{
+    /*width: 0.5rem;*/
+    height: .24rem;
+    color: #777777;
+    line-height: 0.24rem;
+    padding: 0.02rem;
+    background: #EEEEEE;
+    border-radius: 2px;
+    margin-right: 0.15rem;
+    text-align: center;
+    display:inline-block;
+    margin-bottom: 0.1rem;
+    padding: 0 0.05rem;
+}
+.article-container .zebraCrossing{
+    height: 0.08rem;
+    background: #FAFAF9;
+}
+/*评论区的样式开始将来共用*/
+@font-face {
+    font-family: 'iconfont';  /* project id 153165 */
+    src: url('//at.alicdn.com/t/font_zit1tlrqv82maemi.eot');
+    src: url('//at.alicdn.com/t/font_zit1tlrqv82maemi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_zit1tlrqv82maemi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_zit1tlrqv82maemi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_zit1tlrqv82maemi.svg#iconfont') format('svg');
+}
+.comments{
+    width: 100%;
+
+    padding: 0 0.16rem;
+    box-sizing: border-box;
+}
+.comments .commentsHeader{
+    height: 0.56rem;
+    border-bottom: 0.01rem solid #F4F1F0;
+    position: relative;
+}
+.comments .commentsHeader span.comment{
+    display: inline-block;
+    margin-top: 0.28rem;
+    letter-spacing: 0;
+    line-height: .2rem;
+    font-family: PingFangSC-Light;
+    font-size: .14rem;
+    color: #888888;
+}
+.comments .commentsHeader span:nth-child(2){
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+    top: 0.22rem;
+    border-radius: 0.04rem;
+    background: #E3B795;
+    height: 0.24rem;
+    width: 0.50rem;
+    text-align: center;
+    line-height: 0.24rem;
+    font-family: PingFangSC-Regular;
+    font-size: .13rem;
+    color: #FFFFFF;
+
+}
+.comments  .commentDetails {
+    /*border-bottom: 0.01rem solid #F4F1F0;*/
+    padding-bottom: 0.16rem;
+    border-bottom: 0.01rem solid #F4F1F0;
+
+}
+.comments  .commentDetails .user{
+    position: relative;
+    font-family: PingFangSC-Regular;
+
+}
+.comments  .commentDetails .user .userImg{
+    border-radius: 50%;
+    width: 0.40rem;
+    height: 0.40rem;
+    vertical-align: middle;
+    margin-top: -0.2rem;
+}
+/*改动的图片的样式*/
+.comments  .commentDetails .user .ImageAreas{
+    padding-left: 0.46rem;
+    /*border: 1px solid red;*/
+}
+.comments  .commentDetails .user .ImageAreas img{
+    /*border: 1px solid red;*/
+    height: 0.88rem;
+    width: 0.88rem;
+    /*margin-right: 0.08rem;*/
+
+}
+.comments  .commentDetails .user .ImageAreas img:nth-child(2){
+    margin: 0 0.12rem;
+}
+.comments .dataCount{
+    height: 0.46rem;
+    text-align: center;
+    margin-bottom: 0.46rem;
+}
+.comments .dataCount div span{
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    letter-spacing: 0;
+    line-height: .48rem;
+    color: #B0754F;
+}
+.comments .dataCount div span:nth-child(2){
+    width: 0.01rem;
+    height: 0.14rem ;
+    border-right: 0.01rem solid #F4F1F0;
+}
+/*评论区的样式结束*/
+
+/*底部阴影*/
+.footer{
+    width: 100%;
+    height: .49rem;
+    position: fixed;
+    bottom: 0;
+}
+.footer .subscribe{
+    background: #E97544;
+    box-shadow: 0 0.01rem 0.04rem 0 rgba(0,0,0,0.50);
+    text-align: center;
+}
+.footer .subscribe a{
+    font-family: PingFangSC-Regular;
+    font-size: .16rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: .49rem;
+    display: block;
+}
+.footer .pay_success{
+    background: #E3B795;
+    box-shadow: 0 0.01rem 0.04rem 0 rgba(0,0,0,0.50);
+    text-align: center;
+}
+.footer .pay_success a{
+    font-family: PingFangSC-Regular;
+    font-size: .16rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: .49rem;
+    text-decoration: none;
+}
+/*音频样式*/
+@font-face {
+    font-family: 'iconfont';  /* project id 153165 */
+    src: url('//at.alicdn.com/t/font_7srcmkzdk5ljtt9.eot');
+    src: url('//at.alicdn.com/t/font_7srcmkzdk5ljtt9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_7srcmkzdk5ljtt9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_7srcmkzdk5ljtt9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_7srcmkzdk5ljtt9.svg#iconfont') format('svg');
+}
+.article-container .content-text .infoContainer{
+    padding: 10px 5px 10px 10px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    margin-top: 0.25rem;
+}
+.article-container .content-text  .articleAudio{
+    width: 3.43rem;
+    /*height: 0.90rem;*/
+    /*border: 1px solid black;*/
+}
+.article-container .content-text  .articleAudio .AudioBtn{
+    display: inline-block;
+    border: 0.01rem solid transparent;
+    border-radius: 50%;
+    width: 0.34rem;
+    height: 0.34rem;
+    outline: none;
+    vertical-align: top;
+    background: url("../image/ICON.png") no-repeat;
+    background-size: 0.33rem 0.33rem;
+    /*margin-left: 0.12rem;*/
+    /*margin-top: 0.2rem;*/
+    padding: 0;
+
+}
+.article-container .content-text  .articleAudio .playAudioBtn{
+    display: inline-block;
+    border: 0.01rem solid transparent;
+    border-radius: 50%;
+    width: 0.34rem;
+    height: 0.34rem;
+    outline: none;
+    vertical-align: top;
+    background: url("../image/pause_ICON.png") no-repeat;
+    background-size: 0.33rem 0.33rem;
+    padding: 0;
+    /*margin-left: 0.12rem;*/
+    /*margin-top: 0.2rem;*/
+
+}
+
+.article-container .content-text  .articleAudio .infoContainer .AudioBtn{
+    font-family: iconfont;
+    font-size:0.12rem ;
+    text-align: center;
+    /*border: 1px solid yellow;*/
+    /*color: red;*/
+}
+.article-container .content-text  .articleAudio .AudioInfo{
+    display: inline-block;
+    /*background-color: palegreen;*/
+    /*margin-bottom: 0.18rem;*/
+    margin-left: 0.12rem;
+}
+.article-container .content-text  .articleAudio .AudioInfo p:first-child{
+    margin-bottom: .04rem;
+    width: 2.35rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article-container .content-text  .articleAudio .AudioInfo p{
+    font-family: PingFangSC-Light;
+    color: #888888;
+    font-size: .14rem;
+    height: .17rem;
+    padding-top: 0.01rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article-container  .articleAudio .AudioInfo p:nth-child(2) span {
+    font-size: 0.13rem;
+    /*margin-right: 0.12rem;*/
+    font-family: PingFangSC-Light;
+    color: #BBBBBB;
+}
+
+.article-container .content-text  .articleAudio .progress{
+    /*border: 0.01rem solid transparent;*/
+    border-radius: 0.16em;;
+    width: 100%;
+    height: 0.02rem;
+    overflow: hidden;
+    margin-top: -0.02rem;
+}
+.article-container .content-text  .articleAudio .progress div {
+    height: 100%;
+    background-color: #E3B795;
+    /*border-radius: 0.25rem;*/
+    width: 0%;
+    transition: width 0.2s;
+}
+
+

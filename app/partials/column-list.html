@@ -1,0 +1,17 @@
+<div class="column-list">
+    <ul class="list_ul">
+        <li class="clearFix" ng-repeat="list in data" ng-click="showDetail($index)">
+            <img ng-src="{{list.topImage.url + '?imageView2/1/w/200/h/260'}}" alt="">
+
+            <div class="list-content">
+                <p class="list-title">
+                    {{list.name}}
+                </p>
+                <p class="list-introduce">
+                    {{list.desc}}
+                </p>
+                <p class="price">￥{{list.price}}.00/年</p>
+            </div>
+        </li>
+    </ul>
+</div>

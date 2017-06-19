@@ -1,0 +1,118 @@
+<div class="clickComment">
+        <div class="clickCommentHeader">
+            <div class="CommentsTips">
+                <span onClick="javascript: history.go(-1);">
+                    <img src="./image/back.png" alt="">
+                </span>
+                <span>全部评论</span>
+                <span ui-sref="comment({id:mydata})">写评论</span>
+            </div>
+        </div>
+    <div ng-click="Popup($index)"
+         ng-repeat="userComment in data"
+         class="commentDetails">
+        <div class="user">
+                <div class="userBox">
+                <img class="userImg" ng-src="{{userComment.user.icon?userComment.user.icon:'image/head_placeholder_120.png'}}">
+                <div class="userInfo">
+                    <p class="netName">{{userComment.user.nick}}</p>
+                    <p class="commentTime">{{formatDate(userComment.user.ct)}}</p>
+                </div>
+                    <div class="love">
+                        <div ng-click="like($index,$event)" ng-class="{'icon': !isLoved($index), 'icon-active': isLoved($index)}">
+                            <img class="click" src="image/like_click.png">
+                            <img class="default" src="image/like.png">
+                        </div>
+                        <div class="loveCount">
+                            <span class="comment-count">{{userComment.love? userComment.love.length : 0}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentsContent" >
+                    <div>
+                        {{userComment.text}}
+                    </div>
+                </div>
+                <div class="ImageAreas">
+                    <div ng-repeat="img in userComment.image" >
+                        <img  ng-src="{{img.url}}" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="commentStatus" ng-show="temp[$index]">
+            <ul class="up">
+                <li>
+                    <div ng-click="like($index,$event)" ng-class="{'assist': !isLoved($index), 'praise': isLoved($index)}">&#xe645;</div>
+                    <div>赞</div>
+                </li>
+                <li ng-click="replyComments($index)">
+                    <div class="discuss">&#xe622;</div>
+                    <div>评论</div>
+                </li>
+                <li  ng-click="deleteUser($index,$event)" class="special"  >
+                    <div>&#xe602;</div>
+                    <div>删除</div>
+                </li>
+                <li class="special" ng-click="reportUser($index,$event)" ng-if="userComment.typeOf=='no'" >
+                    <div>&#xe62c;</div>
+                    <div>举报</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--举报的状态-->
+    <div class="reportUser" ng-show='reportStatus'>
+        <div class="darkBack"></div>
+        <div class="column-subscribe">
+            <div class="next-container">
+                <div  class="takePicture ">
+                    <span>确定要举办该用户吗？</span>
+                </div>
+                <div  class="photo" ng-click="reportContinue()" >
+                    <span >举报该用户</span>
+                </div>
+                <div class="line"></div>
+                <div ng-click="reportCancel()" class="cancel">
+                    <span >取消</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--删除的状态-->
+<div class="reportUser" ng-show='deleteStatus'>
+    <div class="darkBack"></div>
+    <div class="column-subscribe">
+        <div class="next-container">
+            <div  class="takePicture ">
+                <span>确定要删除该评论吗？</span>
+            </div>
+            <div  class="photo" ng-click="deleteContinue()" >
+                <span >删除该评论</span>
+            </div>
+            <div class="line"></div>
+            <div ng-click="deleteCancel()" class="cancel">
+                <span >取消</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--举报成功-->
+<div class="statue3"  ng-show="reportSuccess">
+    <div class="pay-Success">
+        <div class="tick">
+            <span>&#xe604;</span>
+        </div>
+        <div class="txt">
+            <span>举报成功</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

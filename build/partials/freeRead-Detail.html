@@ -1,0 +1,224 @@
+
+
+<div class="article-container">
+    <div class="article_box">
+        <div class="bigTitle">
+            <p>{{data.title}}</p>
+        </div>
+        <div class="introduce">
+            <span class="author">作者：{{data.user.nick}}</span>
+            <span class="time">{{formatDate(data.ct)}}</span>
+            <span class="source"><i class="from">来自</i>{{from}}</span>
+        </div>
+    <div class="topImg">
+        <img ng-src="{{data.topImage.url + '?imageView2/0/w/640'}}" alt="">
+    </div>
+
+    <!--<div class="content-title">-->
+        <!--<div class="logo">-->
+            <!--<img ng-src="{{data.user.icon}}" alt="">-->
+        <!--</div>-->
+        <!--<div class="logo_text">-->
+            <!--<p class="life_name">{{data.user.nick}}</p>-->
+            <!--<p class="life_introduce">我是一个生活家，我在讲话</p>-->
+        <!--</div>-->
+    <!--</div>-->
+        <!--<div class="epigraph">-->
+            <!--题记：夜宵反应了一个城市的生活品质-->
+        <!--</div>-->
+
+    <div class="content-text" >
+        <div class="text-details">
+            <!--<div class="smallTitle">-->
+                <!--<b></b>-->
+                <!--<span>{{data.desc}}</span>-->
+                <!--<b></b>-->
+            <!--</div>-->
+            <div ng-repeat="resouce in data.resource">
+                <div class="video" ng-if="resouce.tp==1">
+                    <video
+                            id="my-player"
+                            class="video-js"
+                            preload="auto"
+                            poster="http://7xnqn3.com2.z0.glb.qiniucdn.com/img_5895f8e97cf711701e475e9e"
+                            controls
+                            data-setup='{}'
+                            style="width: 100%;height: 2.5rem"
+                            ng-click="btn()">
+                        <source ng-src="{{resouce.url | trustUrl}}" type='video/mp4'>
+                    </video>
+                    <button ng-if="switch" class="btn" ng-click="btn()"></button>
+                </div>
+                <div class="articleImg" ng-if="resouce.tp==0">
+                    <img ng-src="{{resouce.url + '?imageView2/0/w/640'}}" alt="">
+                </div>
+                <div class="articleAudio" yin-pin ng-if="resouce.tp == 3">
+                        <div class="infoContainer">
+                            <button ng-click="audio()" ng-class="{false: 'playAudioBtn', true: 'AudioBtn'}[state]">
+                            </button>
+                            <div class="AudioInfo">
+
+                                <p>{{data.title}}</p>
+                                <p>
+                                    <span>{{resouce.MB}}</span> <span>{{resouce.duration*1000 | date: 'mm:ss'}}</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!--进度条-->
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                        <audio ng-src="{{resouce.url | trustUrl}}"></audio>
+                 </div>
+                <div class="txt" ng-if="resouce.tp==2 && resouce.isSubTitle==0" >
+                    {{resouce.txt}}
+                </div>
+                <div class="txt subTitle" ng-if="resouce.tp==2 && resouce.isSubTitle==1" >
+                    <i></i>{{resouce.txt}}<i></i>
+                </div>
+            </div>
+
+    <div class="Labels" ng-if="data.tags.length>0">
+            <div class="labelsTally">
+                相关标签
+            </div>
+            <div class="tags">
+                <ul>
+                    <li ng-repeat="tag in data.tags">{{tag}}</li>
+                </ul>
+            </div>
+    </div>
+    <!--<div class="zebraCrossing">-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+       </div>
+    </div>
+
+<!--评论区将来可以共用-->
+<div class="clickComment comments">
+    <div class="commentsHeader">
+        <span class="comment">评论: {{data.commentCount}}</span>
+        <span ui-sref="comment({id:data.id})">写评论</span>
+    </div>
+    <div class="commentDetails" ng-repeat="userComment in data.comments" >
+        <div class="user">
+            <div>
+                <div class="userBox">
+                    <img class="userImg" ng-src="{{userComment.user.icon?userComment.user.icon:'image/head_placeholder_120.png'}}">
+                    <div class="userInfo">
+                        <p class="netName">{{userComment.user.nick}}</p>
+                        <p class="commentTime">{{formatDate(userComment.user.ct)}}</p>
+                    </div>
+                    <div class="love">
+                        <div ng-click="like($index,$event)" ng-class="{'icon': !isLoved($index), 'icon-active': isLoved($index)}">
+                            <img class="click" src="image/like_click.png">
+                            <img class="default" src="image/like.png">
+                        </div>
+                        <div class="loveCount">
+                            <span class="comment-count">{{userComment.love? userComment.love.length : 0}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentsContent" >
+                    <div>
+                        {{userComment.text}}
+                    </div>
+                </div>
+                <div class="ImageAreas">
+                    <div ng-repeat="img in userComment.image">
+                        <img ng-src="{{img.url}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dataCount">
+        <div ui-sref="clickComments({id:data.id})" ng-if="data.commentCount>0">
+            <!--<span>共{{data.commentCount}}条</span>-->
+            <!--<span></span>-->
+            <span >查看全部</span>
+        </div>
+    </div>
+</div>
+
+<!--底部阴影部分-->
+<div class="footer">
+            <div class="subscribe" ng-if="data.column.subscribe == 0">
+                <a class="subButton" ng-click="subscribeButton()">订阅 ￥{{price}}.00/年</a>
+            </div>
+            <div ng-if="data.column.subscribe == 1" ui-sref-active="active" class="pay_success">
+                <a ui-sref="subscribe({id:id})">阅读全部文章</a>
+            </div>
+</div>
+<!--状态1先隐藏-->
+<div class="statue1" ng-show='state1'>
+    <div class="darkBack"></div>
+    <div class="column-subscribe">
+        <div class="subscribe-tip">
+            <div class="big-title">
+                <p>订阅醉额娘的课堂</p>
+            </div>
+            <div class="explain">
+                <p>您将订阅<span>{{setTime}}</span>的内容订阅后不支持退订、转让，请再次确认</p>
+            </div>
+            <div class="phone">
+                <form name="registerForm" novalidate>
+                    <p class="input-label">联系人信息</p>
+                    <label class="phone_box">
+                        <span class="phone_icon">
+                            <img src="./image/phone.png" alt="">
+                        </span>
+                        <input type="number" placeholder="请输入手机号" name="number" required ng-minlength="11" ng-maxlength="11" ng-pattern="/^1[3|5|7|8][0-9]\d{4,8}$/" ng-model="user.mobile" ng-focus="focus()">
+                    </label>
+                </form>
+                <p class="error" ng-show="registerForm.number.$dirty && registerForm.number.$invalid">手机号输入有误</p>
+                <p class="requirements" ng-show="fill" ng-init="fill=false">请输入手机号码</p>
+            </div>
+        </div>
+        <div class="next-container">
+            <div ng-click="continueBtn()" class="continue">
+                <span >继续</span>
+            </div>
+            <div class="line"></div>
+            <div ng-click="cancelBtn()" class="cancel">
+                <span >取消</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--状态2先隐藏-->
+<div class="statue2" ng-show="state2" ng-click="hide()">
+    <div class="darkBack"></div>
+    <div class="payment-container">
+        <div class="money-data">
+            <span>支付</span><strong>￥{{price}}</strong>
+        </div>
+        <div class="payment-tip">
+            <p>付款后即订阅课堂</p>
+        </div>
+        <!--<div class="choices">-->
+
+            <!--<div class="WeChat">-->
+                <!--<span></span> <span>微信支付</span>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div ng-click="ensureBtn()" class="ensure">
+            <img src="./image/wechat.png" alt=""><span>微信支付</span>
+        </div>
+    </div>
+</div>
+
+<!--状态3先隐藏-->
+
+<div class="statue3" ng-show="state3">
+    <div class="pay-Success">
+        <div class="tick">
+            <span>&#xe604;</span>
+        </div>
+        <div class="txt">
+            <span>订阅成功</span>
+        </div>
+    </div>
+</div>
+</div>

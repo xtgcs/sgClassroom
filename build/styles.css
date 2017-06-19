@@ -1,0 +1,2490 @@
+.subscribe{
+    width: 100%;
+    height: 100%;
+    background: #F5F5F5;
+}
+.subscribe .subscribe-top{
+    background: #FFFFFF;
+    border: 1px solid #fff;
+}
+.portrait{
+    text-align: center;
+    margin: 0.16rem 0;
+}
+.portrait .head-portrait{
+    width:0.74rem;
+    height: 0.74rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.subscribe-top .name{
+    text-align: center;
+}
+.subscribe-top .name span{
+    font-family: PingFangSC-Regular;
+    font-size: 0.18rem;
+    color: #6D504B;
+    letter-spacing: 0;
+    line-height:0.18rem;
+}
+.subscribe-top .introduce{
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #7D7D7D;
+    letter-spacing: 0;
+    line-height: .12rem;
+    margin: 0.08rem 0 0.12rem 0;
+
+}
+.subscribe-top .details{
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+.subscribe-top .details span{
+    border: 1px solid #E3B795;
+    border-radius: 4px;
+    width: 0.8rem;
+    height: 0.25rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.13rem;
+    color: #E3B795;
+    padding: 0.03rem 0.1rem;
+}
+
+.subscribe .subscribe-list{
+    margin-top: 0.08rem;
+    width: 100%;
+    border: 1px solid #fff;
+}
+.subscribe .subscribe-list>ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.subscribe-list>ul>li{
+    background: #fff;
+    padding: 0.12rem;
+    margin-bottom: .03rem;
+}
+.subscribe-list li .list-img{
+    display: inline-block;
+}
+.subscribe-list li .list-img img.list-cover{
+    width: 1.3rem;
+    height: 1.12rem;
+    border-radius: .04rem;
+    -webkit-border-radius: .04rem;
+    -moz-border-radius: .04rem;
+}
+.subscribe-list li .information{
+    display: inline-block;
+    margin-left: .12rem;
+    height: 1.12rem;
+    vertical-align:top;
+    max-width: 2rem;
+    overflow: hidden;
+}
+.subscribe-list li .information .article-title{
+    font-family: PingFangSC-Regular;
+    font-size: .14rem;
+    line-height: .20rem;
+    height: .4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    color: #52321E;
+}
+.subscribe-list li .information .time{
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #777777;
+    line-height: .18rem;
+    margin: 0.12rem  0 0.26rem 0;
+}
+.subscribe-list li .information .digest{
+    font-family: PingFangSC-Light;
+    font-size: .13rem;
+    height: .36rem;
+    color: #666666;
+    line-height: .18rem;
+    overflow: hidden;
+}*{
+    font-size: 14px;
+}
+.list{
+    margin: 0 .16rem;
+}
+.list .list_ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.list .list_ul li{
+    width: 100%;
+    height: 1.72rem;
+    /*border-top: 1px solid #ccc;*/
+    /*border-bottom: 1px solid #ccc;*/
+    margin-top:.08rem;
+    border-radius:.04rem;
+    -webkit-border-radius: .04rem;
+    position: relative;
+}
+.list .list_ul li img{
+    height: 100%;
+    width: 100%;
+    border-radius:.04rem;
+    -webkit-border-radius: .04rem;
+}
+.list .list_ul li:first-child{
+    /*margin-top: 0;*/
+}
+.list .list_ul .name{
+    position: relative;
+    top:-1.2rem;
+    height: .18rem;
+    line-height: .18rem;
+    text-align: center;
+    font-size: .18rem;
+    color: #fff;
+    padding: 0 .1rem;
+}
+
+/*新加的样式*/
+.column-list{
+    width: 100%;
+    /*background-color: hotpink;*/
+
+    padding:  0 0.15rem;
+    box-sizing: border-box;
+}
+.column-list .list_ul{
+    list-style: none;
+    padding-left:0;
+
+}
+.column-list .list_ul li{
+    height: 1.3rem;
+    padding-bottom: 0.15rem;
+    /*border: 1px solid black;*/
+    /*background-color: chartreuse;*/
+}
+.column-list .list_ul li img{
+    float: left;
+    width: 1.0rem;
+    height: 1.30rem;
+    display: block;
+}
+.column-list .list_ul li .list-content{
+    display: inline-block;
+    background: #F4F4F4;
+    float: right;
+    width: 2.45rem;
+    height: 1.30rem;
+}
+.column-list .list_ul li .list-content .list-title{
+    font-size: .15rem;
+    height: 0.42rem;
+    font-family: PingFangSC-Regular;
+    color: #333333;
+    padding: 0.08rem 0.04rem 0.19rem 0.10rem;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.column-list .list_ul li .list-content .list-introduce{
+    font-family: PingFangSC-Regular;
+    padding: 0 0.10rem 0.07rem  0.10rem ;
+    margin: 0;
+    font-size: .12rem;
+    height: 0.30rem;
+    color: #888888;
+    line-height: .15rem;
+}
+.column-list .list_ul li .list-content .price{
+    font-family: PingFangSC-Medium;
+    margin: 0;
+    height: 0.20rem;
+    padding-right: 0.1rem;
+    padding-bottom: 0.04rem;
+    float: right;
+    color: #C16531;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clickComment .clickCommentHeader{
+    width: 100%;
+    padding: 0.12rem  0.16rem 0.10rem 0.16rem;
+    box-sizing: border-box;
+    height: 0.44rem;
+    border-bottom: 0.01rem solid #BCADAA;
+    box-shadow: 0 0 0 0 #B2B2B2;
+}
+
+.clickComment .clickCommentHeader .CommentsTips{
+    text-align: center;
+    position: relative;
+}
+.clickComment .clickCommentHeader .CommentsTips span{
+    font-family: PingFangSC-Regular;
+
+}
+.clickComment .clickCommentHeader .CommentsTips span:nth-child(1){
+    position: absolute;
+    left: 0;
+    top: -0.018rem;
+    width: 0.09rem;
+    height: 0.14rem;
+}
+.clickComment .clickCommentHeader .CommentsTips span:nth-child(1)>img{
+    width: 100%;
+    height: 100%;
+}
+.clickComment .clickCommentHeader .CommentsTips span:nth-child(2){
+
+    font-size: 0.17rem;
+    color: #B0754F;
+}
+.clickComment .clickCommentHeader .CommentsTips span:nth-child(3){
+    position: absolute;
+    right: 0;
+    font-size: 0.16rem;
+    color: #492824 ;
+
+}
+/*头部样式结束*/
+@font-face {
+    font-family: 'iconfont';  /* project id 153165 */
+    src: url('//at.alicdn.com/t/font_cnpvs4tfriorbe29.eot');
+    src: url('//at.alicdn.com/t/font_cnpvs4tfriorbe29.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_cnpvs4tfriorbe29.woff') format('woff'),
+    url('//at.alicdn.com/t/font_cnpvs4tfriorbe29.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_cnpvs4tfriorbe29.svg#iconfont') format('svg');
+}
+.clickComment{
+    /*width: 100%;*/
+    /*!*padding: 0 0.16rem;*!*/
+    /*box-sizing: border-box;*/
+}
+.clickComment  .commentDetails {
+    /*border-bottom: 0.01rem solid #F4F1F0;*/
+    /*padding-bottom: 0.16rem;*/
+    width: 100%;
+    padding:  0.16rem;
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #F4F1F0;
+    position: relative;
+
+}
+
+.clickComment  .commentDetails .commentStatus{
+    position: absolute;
+    height: 100%;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(234,231,230,0.90);
+
+
+}
+.clickComment  .commentDetails .commentStatus .up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 0.6rem;
+
+    list-style: none;
+    line-height: 0.3rem;
+    box-sizing: border-box;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+
+}
+.clickComment  .commentDetails .commentStatus .up li{
+    display: inline-block;
+
+}
+.clickComment  .commentDetails .commentStatus .up li:nth-child(2){
+   margin: 0 0.52rem;
+
+}
+.clickComment  .commentDetails .commentStatus .up li div:nth-child(1){
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: #EAE7E6;
+    line-height: 0.4rem;
+    font-family: iconfont;
+    font-size: 0.18rem;
+    color: white;
+}
+.clickComment  .commentDetails .commentStatus .up li div.assist{
+    border: 0.01rem solid #E97544;
+    color: #E97544;
+}
+.clickComment  .commentDetails .commentStatus .up li div.discuss{
+    border: 0.01rem solid #E97544;
+    color: #E97544;
+}
+.clickComment  .commentDetails .commentStatus .up li div.praise{
+    background: #E97544;
+    color: white;
+}
+
+.clickComment  .commentDetails .commentStatus .up .special div:nth-child(1) {
+    background: #977B77;
+
+}
+.clickComment  .commentDetails .commentStatus .up li div:nth-child(2){
+    color: #515151;
+}
+
+
+.clickComment  .commentDetails .user{
+    position: relative;
+    font-family: PingFangSC-Regular;
+
+
+}
+.user .userBox{
+    margin-top: .0rem;
+}
+.clickComment  .commentDetails .user .userImg{
+    border-radius: 50%;
+    width: 0.40rem;
+    height: 0.40rem;
+    vertical-align: middle;
+    margin-top: -0.2rem;
+}
+
+.clickComment  .commentDetails .user .userInfo{
+    display: inline-block;
+    margin-top: .04rem;
+    margin-left: .1rem;
+}
+
+.clickComment  .commentDetails .user .netName{
+    font-size: 0.13rem;
+    letter-spacing: 0;
+    line-height: 0.18rem;
+    font-family: PingFangSC-Regular;
+    color: #B0754F;
+}
+.clickComment  .commentDetails .user .commentTime{
+    font-size: .1rem;
+    letter-spacing: 0;
+    line-height: .12rem;
+    margin-top: 0.05rem;
+    margin-bottom: 0.06rem;
+    font-family: PingFangSC-Regular;
+    color: #888888;
+}
+.clickComment .commentDetails .loveCount{
+    display: inline-block;
+    float: right;
+    margin-left: .04rem;
+}
+.clickComment  .commentDetails .user .love{
+    height: 0.3rem;
+    /*border: 1px solid red;*/
+    display: inline-block;
+    float: right;
+    margin-top: .08rem;
+}
+.clickComment  .commentDetails .user .icon{
+    font-family: 'iconfont';
+    width: .2rem;
+    height: 0.2rem;
+    font-size: 0.20rem;
+    color: #AEAEAE;
+    display: inline-block;
+}
+
+ .love .icon-active {
+    font-family: 'iconfont';
+    width: .2rem;
+    height: 0.2rem;
+    font-size: 0.20rem;
+    color: #AEAEAE;
+     display: inline-block;
+}
+ .love .icon {
+    font-family: 'iconfont';
+    width: .2rem;
+    height: 0.2rem;
+    font-size: 0.20rem;
+    color: #AEAEAE;
+     display: inline-block;
+}
+.love .icon img.click {
+    display: none;
+}
+.love .icon-active img.default {
+    display: none;
+}
+.love .click{
+    width: .16rem;
+    height: .16rem;
+}
+.love .default{
+    width: .16rem;
+    height: .16rem;
+}
+
+.clickComment  .commentDetails .user .commentsContent {
+    margin-left: 0.53rem ;
+}
+.clickComment  .commentDetails .user .commentsContent div{
+    font-size: 0.14rem;
+    color: #646464;
+    letter-spacing: 0.01rem;
+    line-height: 0.24rem;
+    font-family: PingFangSC-Regular;
+}
+/*评论区的图片样式*/
+.clickComment  .commentDetails .user .ImageAreas{
+    padding-left: 0.5rem;
+    padding-top: 0.08rem;
+}
+.clickComment  .commentDetails .user .ImageAreas img{
+    height: 0.88rem;
+    width: 0.88rem;
+}
+.clickComment  .commentDetails .user .ImageAreas img:nth-child(2){
+    margin: 0 0.12rem;
+}
+
+    /*举报用户的状态样式*/
+
+.reportUser{
+    /*display: none;*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+}
+.reportUser .darkBack{
+    width: 100%;
+    height: 4.58rem;
+    background:rgba(0,0,0,0.20);
+}
+
+.reportUser .column-subscribe{
+    width: 100%;
+    height:2.41rem;
+    background-color: #FFFFFF;
+}
+.reportUser .next-container .photo{
+    position: relative;
+    display: block;
+    background: #FAFAFA;
+    overflow: hidden;
+    color: #1E88C7;
+    text-align: center;
+}
+.reportUser .next-container .photo input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.reportUser .next-container .photo , .next-container .cancel ,.reportUser .next-container .takePicture{
+    width: 100%;
+    height: 0.6rem;
+    text-align: center;
+    font-size: .17rem;
+    font-family: PingFangSC-Medium;
+    letter-spacing: 0;
+    line-height: .6rem;
+
+    background-color: #FAFAF9;
+}
+
+.reportUser .next-container .takePicture {
+    color: #515151;
+    font-size: 0.12rem;
+    border-bottom: 0.01rem solid #F4F1F0;
+}
+.reportUser .next-container .photo span{
+    color: #FF5031;
+}
+.reportUser .next-container .cancel span{
+    color: #5798D9;
+}
+.reportUser .next-container .line{
+    width: 100%;
+    height: 0.04rem;
+    background: #EAE7E6;
+}
+
+body{
+    font-size: 14px;
+}
+.wrap{
+    width: 100%;
+}
+.nav{
+    width: 100%;
+    height: .52rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.nav ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav ul li{
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    font-size:.18rem;
+    text-align: center;
+}
+.nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+.nav .free a{
+    height: .51rem;
+    line-height:.51rem;
+    color: #492824;
+    font-size: 0.18rem;
+    background: #fafafa;
+    border-top:solid 0.01rem #BCADAA;
+}
+.nav .subscribe a{
+    color: #fff;
+    background: #E97544 ;
+    font-size: 0.18rem;
+    line-height:.52rem;
+    height: .52rem;
+}
+.nav .subscribe .subButton{
+    background: #E3B795;
+}
+.wrap .header{
+    width: 100%;
+}
+.wrap .header .img{
+    width: 100%;
+    height:1.73rem;
+}
+.header .img img{
+    width: 100%;
+    height: 100%;
+}
+.header .portrait_box{
+    height:.74rem;
+    position: relative;
+    top:-.37rem;
+}
+.header .portrait{
+    width:.72rem;
+    height:.72rem;
+    font-size: 0;
+    margin: 0 auto;
+    border: .02rem solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.header .portrait img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.header .name_box{
+    height: .18rem;
+    margin-top: -.3rem;
+    text-align: center;
+
+}
+.header .name_box .icon{
+    width: .12rem;
+    height: .12rem;
+    display: inline-block;
+}
+.header .name_box .icon>img{
+    width: 100%;
+    height: 100%;
+}
+.header .name_box .name{
+    font-size: .18rem;
+    color: #6D504B;
+}
+.header .instructions{
+    height: .12rem;
+    font-size:.12rem;
+    text-align: center;
+    margin-top: .1rem;
+    color: #7D7D7D;
+}
+.content{
+    margin:0 .16rem;
+    margin-bottom: 0.68rem;
+}
+.content .title{
+    line-height: .655rem;
+    margin-top: .225rem;
+    border-top: 1px solid #E7E2E1;
+    border-bottom: 1px solid #E7E2E1;
+    color: #B37A55;
+    text-align: center;
+    font-size:.18rem;
+}
+.content .column_introduction{
+    color: #6D504B;
+    font-size:.18rem;
+    text-align: center;
+    margin-top: .32rem;
+    margin-bottom: .32rem;
+}
+.content .column_introduction::before{
+    content: "-";
+    width:.5rem;
+    height: 0;
+    /*border-top: 1px solid red;*/
+}
+.content .column_introduction::after{
+    content: "-";
+    width:.5rem;
+    height: 0;
+    /*border-top: 1px solid red;*/
+}
+.content .top_img{
+    /*height: 2.2rem;*/
+    margin-top:0.16rem;
+}
+.content .top_img img{
+    width: 100%;
+    height: 100%;
+}
+.content .paragraph p{
+    margin: .16rem 0 0;
+    font-size:.16rem;
+    color: #3C3C3C;
+    line-height:.32rem;
+}
+
+.content  .subTitle{
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: .18rem;
+    color: #6D504B;
+    letter-spacing: 0;
+    line-height: .18rem;
+    margin-top: .16rem;
+}
+.content  .subTitle>i{
+    width: 0.04rem;
+    height: 0.04rem;
+    background: #BCADAA;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 0.04rem;
+}
+.content  .subTitle>i:nth-child(1){
+    margin-right: 0.08rem;
+}
+.content  .subTitle>i:nth-child(2){
+    margin-left: 0.08rem;
+}
+
+/*3个状态样式*/
+/*订阅statue1样式开始*/
+.statue1{
+    /*display: none;*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+
+}
+.statue1 .darkBack{
+    /*height: 3.62rem;*/
+    background:rgba(0,0,0,0.40);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+}
+
+.statue1 .column-subscribe{
+    width: 100%;
+    height: 3.45rem;
+    /*margin-top: -0.39rem;*/
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom:0;
+}
+.statue1 .column-subscribe .subscribe-tip{
+    height: 2.19rem;
+    border-bottom: 1px solid #F4F1F0;
+}
+.statue1 .column-subscribe .subscribe-tip .big-title{
+    text-align: center;
+    height: 0.56rem;
+    font-size: 0.16rem;
+    font-family: PingFangSC-Regular;
+    color: #2A2A2A ;
+    font-weight: bolder;
+    letter-spacing: 0;
+    line-height: 0.16rem;
+    border: 1px solid transparent;
+}
+.statue1 .column-subscribe .subscribe-tip .big-title p{
+    margin-top: 0.24rem;
+    margin-bottom: 0;
+}
+.statue1 .column-subscribe .subscribe-tip .explain{
+    margin: 0 auto;
+    width: 2.4rem;
+    text-align: center;
+}
+.statue1 .column-subscribe .subscribe-tip .explain p{
+    display: block;
+    font-family: PingFangSC-Regular;
+    margin: 0;
+    color:#515151;
+    letter-spacing: 0;
+    height: 0.36rem;
+    line-height: 0.18rem;
+    font-size: 0.13rem;
+
+}
+.statue1 .column-subscribe .subscribe-tip .phone{
+   /*height: .78rem;*/
+    padding: 0 0.16rem;
+}
+.subscribe-tip .phone .input-label{
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #B0754F;
+    letter-spacing: 0;
+    line-height: .12rem;
+    margin-top: 0.16rem;
+}
+.statue1 .column-subscribe .subscribe-tip  .phone .phone_box{
+   line-height: .4rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.08rem;
+    display: block;
+    background: #FFFFFF;
+    border: 0.01rem solid #EDEDED;
+    border-radius: 0.08rem;
+}
+.phone .phone_box .phone_icon{
+    width: 0.24rem;
+    height: 0.24rem;
+    display: inline-block;
+    margin: 0.08rem 0.05rem;
+}
+.phone .phone_box .phone_icon>img{
+    width: 100%;
+    height: 100%;
+}
+.statue1 .column-subscribe .subscribe-tip  .phone .phone_box input{
+    height: 0.4rem;
+    outline: 0;
+    vertical-align: top;
+    font-family: PingFangSC-Regular;
+    font-size: .15rem;
+    letter-spacing: 0;
+    line-height: .4rem;
+    width: 2.8rem;
+    color: #333333;
+    border: none;
+}
+.phone .phone_box input::-webkit-input-placeholder {
+    color: #DDDDDD;
+  }
+
+.subscribe-tip .phone .requirements,.subscribe-tip .phone .error{
+    font-family: PingFangSC-Regular;
+    font-size: 0.12rem;
+    color: #E97544;
+    letter-spacing: 0;
+    line-height: 0.17rem;
+    margin-bottom: 0.11rem;
+}
+.statue1 .next-container .continue , .next-container .cancel{
+    width: 100%;
+    height: 0.6rem;
+    text-align: center;
+    font-size: .17rem;
+    font-family: PingFangSC-Medium;
+    letter-spacing: 0;
+    line-height: .6rem;
+
+}
+.statue1 .next-container .continue span{
+    color: #E97544;
+    font-size: 0.17rem;
+}
+.statue1 .next-container .cancel span{
+    color: #5798D9;
+    font-size: 0.17rem;
+}
+.statue1 .next-container .line{
+    width: 100%;
+    height: 0.04rem;
+    background: #EAE7E6;
+}
+/*订阅statue1样式结束*/
+
+/*订阅statue2样式开始*/
+.statue2{
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right:0;
+}
+.statue2 .darkBack{
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.40);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+}
+.statue2 .payment-container {
+    height: 2.42rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.statue2 .payment-container .money-data{
+
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.3rem;
+    /*border: 0.01rem solid red;*/
+    text-align: center;
+}
+.statue2 .payment-container .money-data span{
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 0.20rem;
+    color: #646464;
+    letter-spacing: 0;
+    line-height: 0.16rem;
+    margin-top: 0.37rem;
+}
+.statue2 .payment-container .money-data strong{
+
+    font-family: PingFangSC-Medium;
+    font-size: 0.24rem;
+    color: #E97544;
+    letter-spacing: 0.01rem;
+    line-height: 0.24rem;
+
+}
+.statue2 .payment-container .payment-tip p{
+    font-family: PingFangSC-Regular;
+    font-size: 0.14rem;
+    color: #AEAEAE;
+    letter-spacing: 0;
+    line-height: 0.14rem;
+    text-align: center;
+    margin: 0;
+
+}
+.statue2 .payment-container .choices{
+    height: 0.40rem;
+    width: 3.43rem;
+    /*border: 0.01rem solid red;*/
+    margin:  0 auto;
+    padding-top: 0.24rem;
+    padding-bottom: 0.24rem;
+    text-align: center;
+}
+.statue2 .payment-container .choices .alipay,.statue2 .payment-container .choices .WeChat{
+    display: inline-block;
+    width: 1.62rem;
+    height: 0.38rem;
+    border: 0.01rem solid red;
+    border-radius: 0.02rem ;
+    text-align: center;
+
+}
+.statue2 .payment-container .choices .WeChat{
+    /*margin-left: 0.15rem;*/
+    border: 0.01rem solid #1BAC19;
+    border-radius: 0.02rem;
+}
+.statue2 .payment-container .choices .alipay span ,
+.statue2 .payment-container .choices .WeChat span{
+    width: 0.40rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.14rem;
+    color: #1BAC19;
+    letter-spacing: 0;
+    line-height: 0.40rem;
+}
+/*.statue2 .payment-container .choices .alipay span{
+    color: #FF5031;
+}*/
+.statue2 .payment-container .choices .WeChat span{
+    color:#1BAC19;
+}
+.statue2 .payment-container .ensure{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right: 0;
+}
+
+.statue2 .payment-container .ensure{
+    width: 100%;
+    height: 0.62rem;
+    background-color: #1BAC19;
+    font-family: PingFangSC-Regular;
+    font-size: 0.18rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 0.62rem;
+    text-align: center;
+}
+.statue2 .payment-container .ensure img{
+    width: 0.25rem;
+    height: 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.2rem;
+    margin-right: 0.15rem;
+    font-family: PingFangSC-Regular;
+    font-size: .18rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: .18rem;
+}
+.statue2 .payment-container .ensure span{
+    display: inline-block;
+    vertical-align:top;
+}
+
+/*订阅statue2样式结束*/
+
+/*订阅statue3样式开始*/
+@font-face {
+    font-family: 'iconfont';  /* project id 153165 */
+    src: url('//at.alicdn.com/t/font_zik73s618n597ldi.eot');
+    src: url('//at.alicdn.com/t/font_zik73s618n597ldi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_zik73s618n597ldi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_zik73s618n597ldi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_zik73s618n597ldi.svg#iconfont') format('svg');
+}
+
+.statue3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    /*display: none;*/
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.statue3 .pay-Success{
+    position: absolute;
+    width: 0.88rem;
+    height:0.82rem;
+    top: 2.93rem;
+    left:1.435rem;
+    /*border: 2px solid red;*/
+    background: rgba(103,103,103,0.95);
+    border-radius: 0.04rem;
+}
+.statue3 .pay-Success div span{
+    display: inline-block;
+    font-family:iconfont ;
+    font-size: 0.26rem;
+    color: #FFFFFF;
+    font-weight: 100;
+    width: 0.88rem;
+    text-align: center;
+    height: 0.41rem;
+    line-height: 0.50rem;
+    /*border: 1px solid red;*/
+}
+.statue3 .pay-Success .txt span{
+    font-size: 0.14rem;
+    font-family: PingFangSC-Regular;
+    color: #FFFFFF;
+    letter-spacing: 0.01rem;
+    line-height: 0.35rem;
+
+}
+
+.Comment .CommentsHeader{
+    width: 100%;
+    padding: 0.12rem  0.16rem 0.10rem 0.16rem;
+    box-sizing: border-box;
+    height: 0.44rem;
+
+    border-bottom: 0.01rem solid #BCADAA;
+    box-shadow: 0 0 0 0 #B2B2B2;
+}
+
+.Comment .CommentsHeader .CommentsTips{
+    text-align: center;
+    position: relative;
+}
+.Comment .CommentsHeader .CommentsTips span{
+    font-family: PingFangSC-Regular;
+
+}
+.Comment .CommentsHeader .CommentsTips span:nth-child(1){
+    position: absolute;
+     left: 0;
+    width: 0.09rem;
+    height: 0.14rem;
+    display: inline-block;
+}
+.Comment .CommentsHeader .CommentsTips span:nth-child(1)>img{
+    width: 100%;
+    height: 100%;
+}
+.Comment .CommentsHeader .CommentsTips span:nth-child(2){
+
+    font-size: 0.17rem;
+    color: #B0754F;
+}
+.Comment .CommentsHeader .CommentsTips span:nth-child(3){
+    position: absolute;
+    right: 0;
+    font-size: 0.16rem;
+    color: #BCADAA;
+}
+.Comment .commentArea{
+    width: 100%;
+    height: 2.15rem;
+    padding:0.16rem ;
+    box-sizing: border-box;
+   /*border:  1px solid red;*/
+}
+.comment-image-container{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.15rem;
+    float: left;
+}
+.comment-image-container>img{
+    width: 100%;
+    height: 100%;
+}
+
+.Comment .commentArea textarea:focus{
+    font-family: PingFangSC-Regular;
+
+    color: #2A2A2A;
+    letter-spacing: 0.02rem;
+    line-height: .24rem;
+}
+.Comment .commentArea textarea{
+    font-family: PingFangSC-Regular;
+    line-height: .24rem;
+    font-size: .16rem;
+    letter-spacing: 0.02rem;
+    color: #2A2A2A;
+    outline: none;
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Comment .uploadPhoto{
+    width: 1.2rem;
+    height: 1.2rem;
+    /*border: 0.01rem solid red;*/
+    margin-left: 0.16rem;
+    position: relative;
+    display: inline-block;
+    background: #FAFAFA;
+    overflow: hidden;
+    color: #1E88C7;
+    text-align: center;
+    float: left;
+
+}
+.Comment .uploadPhoto >img{
+    width: 100%;
+    height: 100%;
+}
+.Comment .uploadPhoto input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.Comment .uploadPhoto span{
+    font-size: 0.9rem;
+    color: darkgray;
+    margin-top: -.2rem;
+    display: inline-block;
+}
+
+/*上传图片的样式*/
+.upPhoto{
+    /*display: none;*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+
+}
+.upPhoto .darkBack{
+    width: 100%;
+    height: 4.58rem;
+    background:rgba(0,0,0,0.20);
+}
+
+.upPhoto .column-subscribe{
+    width: 100%;
+    height:2.41rem;
+    background-color: #FFFFFF;
+}
+.upPhoto .next-container .photo{
+    position: relative;
+    display: block;
+    background: #FAFAFA;
+    overflow: hidden;
+    color: #1E88C7;
+    text-align: center;
+}
+.upPhoto .next-container .photo input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.upPhoto .next-container .photo , .next-container .cancel ,.upPhoto .next-container .takePicture{
+    width: 100%;
+    height: 0.6rem;
+    text-align: center;
+
+    font-family: PingFangSC-Medium;
+    letter-spacing: 0;
+    line-height: .6rem;
+    background-color: #FAFAF9;
+}
+.upPhoto .next-container .takePicture {
+    border-bottom: 0.01rem solid #F4F1F0;
+}
+.upPhoto .next-container .takePicture span {
+    color: #491F18;
+    font-size: .17rem;
+}
+.upPhoto .next-container .photo span{
+    color: #491F18;
+    font-size: .17rem;
+}
+.upPhoto .next-container .cancel span{
+    color: #5798D9;
+    font-size: .17rem;
+}
+.upPhoto .next-container .line{
+    width: 100%;
+    height: 0.04rem;
+    background: #EAE7E6;
+}.article-container{
+    width: 100%;
+    /*border: 1px solid transparent;*/
+
+}
+.article_box{
+    margin: 0 .16rem;
+}
+.article_box .topImg{
+    /*margin: 0 0.12rem;*/
+}
+.article-container .topImg img{
+    display: block;
+    height: 2rem;
+    width: 100%;
+}
+
+.article_box .bigTitle{
+    margin-top: .16rem;
+}
+.article_box .source{
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B0754F;
+}
+.article_box .from{
+    color: #888888;
+    font-style: normal;
+}
+.article_box .bigTitle p{
+    margin: 0;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    font-size: .18rem;
+    font-family: PingFangSC-Medium;
+    font-weight: bolder;
+    color: #000;
+    letter-spacing: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.article_box .introduce{
+    height: .18rem;
+    margin-top: .15rem;
+    margin-bottom: .28rem;
+}
+.introduce .author,.introduce .time{
+    font-family: PingFangSC-Regular;
+    font-size: .13rem;
+    color: #888888;
+}
+.introduce .time{
+    margin-left: .1rem;
+}
+.content-title{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding: .16rem;
+    margin-top: .26rem;
+
+}
+.content-title .logo{
+    box-sizing: border-box;
+    /*height: 0.75rem;*/
+    /*padding-top: .12rem;*/
+    /*padding-bottom: .12rem;*/
+    display: inline-block;
+}
+.article_box .logo_text{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: .15rem;
+    overflow: hidden;
+}
+.article_box .logo_text .life_name{
+    font-family: PingFangSC-Regular;
+    font-size: .16rem;
+    color: #2A2A2A;
+    letter-spacing: 0;
+    line-height: .18rem;
+}
+.article_box .logo_text .life_introduce{
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #646464;
+    letter-spacing: 0;
+    line-height: .1rem;
+    margin-top: 0.14rem;
+}
+.content-title .logo img{
+    width: .48rem;
+    height: .48rem;
+    border-radius: 50%;
+}
+.content-title .logo p{
+    font-family: PingFangSC-Regular;
+    display: inline-block;
+    font-size: .18rem;
+    color: #2A2A2A;
+    letter-spacing: 0;
+    font-weight: bold;
+    line-height: .18rem;
+
+}
+.article_box .epigraph{
+    padding: 0.07rem 0.15rem;
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #666666;
+    letter-spacing: 0;
+    line-height: .2rem;
+    background: #EEEEEE;
+    margin-top: .3rem;
+}
+.m{
+    width: 100%;
+}
+video{
+    width: 100%;
+    height: 2.5rem;
+    position: relative;
+}
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+.vjs-big-play-centered .vjs-big-play-button{
+    margin-top: -1.8em;;
+}
+.video-js .vjs-big-play-button{
+    width: 0.6rem;
+    height: .6rem;
+    line-height: .6rem;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.95;
+}
+
+.article-container .content-text {
+    width: 100%;
+    /*height: 4.5rem;*/
+    box-sizing: border-box;
+    /*padding-left: .12rem;*/
+    /*padding-right: .12rem;*/
+    padding-top: 0;
+}
+
+.article-container .content-text .text-details .smallTitle{
+    height: .18rem;
+    padding-top: .32rem;
+    padding-bottom: .32rem;
+    text-align: center;
+}
+
+.article-container .content-text  .text-details .smallTitle span{
+    font-size: .18rem;
+    font-family: PingFangSC-Regular;
+    color: #6D504B;
+    letter-spacing: 0;
+    line-height:.18rem;
+    font-weight: 800;
+}
+.article-container .content-text .text-details .smallTitle b{
+    display: inline-block;
+    width: .16rem;
+    height: .1rem;
+    vertical-align: 0.06rem;
+    border-bottom: 0.01rem solid #D5C7C6;
+}
+.article-container .content-text  .articleImg{
+    margin-top: 0.25rem;
+    /*margin-left: 0.12rem;*/
+}
+.article-container .content-text  .articleImg img{
+    width: 100%;
+    /*height: 2.047rem;*/
+    display: block;
+
+}
+.article-container .content-text  .articleAudio{
+    width: 3.43rem;
+    /*height: 2.20rem;*/
+}
+.article-container .content-text .mark div{
+    font-family: PingFangSC-Regular;
+    height: 0.14rem;
+    padding-top: 0.16rem;
+    font-size: 0.14rem;
+    color: #AEAEAE;
+    letter-spacing: 0;
+    line-height: 0.14rem;
+}
+.article-container .content-text .txt{
+    margin-top: 0.20rem;
+    font-family: PingFangSC-Regular;
+    font-size: .15rem;
+    color: #555555;
+    letter-spacing: 0;
+    line-height: .26rem;
+}
+.article-container .content-text .subTitle{
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: .18rem;
+    color: #6D504B;
+    letter-spacing: 0;
+    line-height: .18rem;
+}
+.article-container .content-text .subTitle>i{
+    width: 0.04rem;
+    height: 0.04rem;
+    background: #BCADAA;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 0.04rem;
+}
+.article-container .content-text .subTitle>i:nth-child(1){
+    margin-right: 0.08rem;
+}
+.article-container .content-text .subTitle>i:nth-child(2){
+    margin-left: 0.08rem;
+}
+
+.article-container .content-text .video{
+     margin-top: 0.15rem;
+     position: relative;
+ }
+.article-container .content-text .video .btn{
+    position: absolute;
+    left: 44%;
+    top: 42%;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    background: url(data:image/png;base64,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) no-repeat;
+    background-size: 0.4rem 0.4rem;
+}
+.article-container .urls {
+    width: 2.59rem;
+    /*margin-left: 0.16rem;*/
+    /*background-color: red;*/
+    height: 0.80rem;
+    font-weight: 800;
+    margin-bottom: 0.40rem;
+}
+.article-container .urls a{
+
+    font-family: PingFangSC-Regular;
+    text-decoration: none;
+    color: #3D6B99;
+    font-size: 0.16rem;
+    letter-spacing: 0;
+    line-height: 0.24rem;
+
+
+}
+.article-container .urls .pandaTea div{
+    margin-bottom: 0.32rem;
+    height: 0.24rem;
+    text-indent: 0.04rem;
+
+}
+.article-container .urls .sanlian div{
+    text-indent: 0.04rem;
+    line-height: 0.24rem;
+    height: 0.24rem;
+    width: 3.0rem;
+    background: rgba(85,164,243,0.10);
+
+}
+.article-container .actives{
+    width: 3.43rem;
+    height: 4.34rem;
+    border: 0.01rem solid #E4E4E4 ;
+    margin: 0 auto;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    color: #2E2E2E;
+    letter-spacing: 0;
+
+}
+.article-container .actives p{
+    margin: 0;
+}
+.article-container .actives .activesTime{
+    height: 1.26rem;
+
+}
+.article-container .actives .activesTime p:nth-child(1){
+    padding-top: 0.40rem;
+    font-size: 0.16rem;
+    font-weight: 800;
+}
+.article-container .actives .activesTime p:nth-child(2){
+    padding-top: 0.10rem;
+    font-size: 0.16rem;
+    font-weight: 800;
+}
+.article-container .actives .activesTime span{
+    margin: 0 auto;
+    display: block;
+    width: 0.16rem;
+    height: 0.24rem;
+    border-bottom: 0.01rem solid #D5C7C6;
+}
+.article-container .actives .activesWay{
+    height: 1.26rem;
+}
+.article-container .actives .activesWay p:nth-child(1){
+    font-size: 0.16rem;
+    margin-top:0;
+}
+.article-container .actives .activesWay p{
+    margin-top: 0.14rem;
+    font-size: 0.16rem;
+    font-weight: 800;
+}
+
+.article-container .actives .activesWay span{
+    margin: 0 auto;
+    display: block;
+    width: 0.16rem;
+    height: 0.29rem;
+    border-bottom: 0.01rem solid #D5C7C6;
+}
+.article-container .actives .activesAward{
+    height: 1.82rem;
+}
+.article-container .actives  .activesAward p:nth-child(1){
+    margin-top: 0.06rem;
+}
+.article-container .actives  .activesAward p{
+    margin-top: 0.14rem;
+    font-size: 0.16rem;
+    font-weight: 800;
+}
+.article-container .Labels{
+    box-sizing: border-box;
+    /*width: 100%;*/
+    /*height: 1.12rem;*/
+
+    margin: 0.32rem  0.05rem;
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #7D7D7D;
+
+}
+.article-container .Labels .labelsTally{
+    color: #B0754F;
+    font-size:0.12rem;
+}
+.article-container .Labels .tags ul{
+    list-style: none;
+
+    padding-left: 0;
+
+}
+.article-container .Labels .tags ul li{
+    /*width: 0.5rem;*/
+    height: .24rem;
+    color: #777777;
+    line-height: 0.24rem;
+    padding: 0.02rem;
+    background: #EEEEEE;
+    border-radius: 2px;
+    margin-right: 0.15rem;
+    text-align: center;
+    display:inline-block;
+    margin-bottom: 0.1rem;
+    padding: 0 0.05rem;
+}
+.article-container .zebraCrossing{
+    height: 0.08rem;
+    background: #FAFAF9;
+}
+/*评论区的样式开始将来共用*/
+@font-face {
+    font-family: 'iconfont';  /* project id 153165 */
+    src: url('//at.alicdn.com/t/font_zit1tlrqv82maemi.eot');
+    src: url('//at.alicdn.com/t/font_zit1tlrqv82maemi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_zit1tlrqv82maemi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_zit1tlrqv82maemi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_zit1tlrqv82maemi.svg#iconfont') format('svg');
+}
+.comments{
+    width: 100%;
+
+    padding: 0 0.16rem;
+    box-sizing: border-box;
+}
+.comments .commentsHeader{
+    height: 0.56rem;
+    border-bottom: 0.01rem solid #F4F1F0;
+    position: relative;
+}
+.comments .commentsHeader span.comment{
+    display: inline-block;
+    margin-top: 0.28rem;
+    letter-spacing: 0;
+    line-height: .2rem;
+    font-family: PingFangSC-Light;
+    font-size: .14rem;
+    color: #888888;
+}
+.comments .commentsHeader span:nth-child(2){
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+    top: 0.22rem;
+    border-radius: 0.04rem;
+    background: #E3B795;
+    height: 0.24rem;
+    width: 0.50rem;
+    text-align: center;
+    line-height: 0.24rem;
+    font-family: PingFangSC-Regular;
+    font-size: .13rem;
+    color: #FFFFFF;
+
+}
+.comments  .commentDetails {
+    /*border-bottom: 0.01rem solid #F4F1F0;*/
+    padding-bottom: 0.16rem;
+    border-bottom: 0.01rem solid #F4F1F0;
+
+}
+.comments  .commentDetails .user{
+    position: relative;
+    font-family: PingFangSC-Regular;
+
+}
+.comments  .commentDetails .user .userImg{
+    border-radius: 50%;
+    width: 0.40rem;
+    height: 0.40rem;
+    vertical-align: middle;
+    margin-top: -0.2rem;
+}
+/*改动的图片的样式*/
+.comments  .commentDetails .user .ImageAreas{
+    padding-left: 0.46rem;
+    /*border: 1px solid red;*/
+}
+.comments  .commentDetails .user .ImageAreas img{
+    /*border: 1px solid red;*/
+    height: 0.88rem;
+    width: 0.88rem;
+    /*margin-right: 0.08rem;*/
+
+}
+.comments  .commentDetails .user .ImageAreas img:nth-child(2){
+    margin: 0 0.12rem;
+}
+.comments .dataCount{
+    height: 0.46rem;
+    text-align: center;
+    margin-bottom: 0.46rem;
+}
+.comments .dataCount div span{
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    letter-spacing: 0;
+    line-height: .48rem;
+    color: #B0754F;
+}
+.comments .dataCount div span:nth-child(2){
+    width: 0.01rem;
+    height: 0.14rem ;
+    border-right: 0.01rem solid #F4F1F0;
+}
+/*评论区的样式结束*/
+
+/*底部阴影*/
+.footer{
+    width: 100%;
+    height: .49rem;
+    position: fixed;
+    bottom: 0;
+}
+.footer .subscribe{
+    background: #E97544;
+    box-shadow: 0 0.01rem 0.04rem 0 rgba(0,0,0,0.50);
+    text-align: center;
+}
+.footer .subscribe a{
+    font-family: PingFangSC-Regular;
+    font-size: .16rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: .49rem;
+    display: block;
+}
+.footer .pay_success{
+    background: #E3B795;
+    box-shadow: 0 0.01rem 0.04rem 0 rgba(0,0,0,0.50);
+    text-align: center;
+}
+.footer .pay_success a{
+    font-family: PingFangSC-Regular;
+    font-size: .16rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: .49rem;
+    text-decoration: none;
+}
+/*音频样式*/
+@font-face {
+    font-family: 'iconfont';  /* project id 153165 */
+    src: url('//at.alicdn.com/t/font_7srcmkzdk5ljtt9.eot');
+    src: url('//at.alicdn.com/t/font_7srcmkzdk5ljtt9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_7srcmkzdk5ljtt9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_7srcmkzdk5ljtt9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_7srcmkzdk5ljtt9.svg#iconfont') format('svg');
+}
+.article-container .content-text .infoContainer{
+    padding: 10px 5px 10px 10px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    margin-top: 0.25rem;
+}
+.article-container .content-text  .articleAudio{
+    width: 3.43rem;
+    /*height: 0.90rem;*/
+    /*border: 1px solid black;*/
+}
+.article-container .content-text  .articleAudio .AudioBtn{
+    display: inline-block;
+    border: 0.01rem solid transparent;
+    border-radius: 50%;
+    width: 0.34rem;
+    height: 0.34rem;
+    outline: none;
+    vertical-align: top;
+    background: url(data:image/png;base64,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) no-repeat;
+    background-size: 0.33rem 0.33rem;
+    /*margin-left: 0.12rem;*/
+    /*margin-top: 0.2rem;*/
+    padding: 0;
+
+}
+.article-container .content-text  .articleAudio .playAudioBtn{
+    display: inline-block;
+    border: 0.01rem solid transparent;
+    border-radius: 50%;
+    width: 0.34rem;
+    height: 0.34rem;
+    outline: none;
+    vertical-align: top;
+    background: url(data:image/png;base64,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) no-repeat;
+    background-size: 0.33rem 0.33rem;
+    padding: 0;
+    /*margin-left: 0.12rem;*/
+    /*margin-top: 0.2rem;*/
+
+}
+
+.article-container .content-text  .articleAudio .infoContainer .AudioBtn{
+    font-family: iconfont;
+    font-size:0.12rem ;
+    text-align: center;
+    /*border: 1px solid yellow;*/
+    /*color: red;*/
+}
+.article-container .content-text  .articleAudio .AudioInfo{
+    display: inline-block;
+    /*background-color: palegreen;*/
+    /*margin-bottom: 0.18rem;*/
+    margin-left: 0.12rem;
+}
+.article-container .content-text  .articleAudio .AudioInfo p:first-child{
+    margin-bottom: .04rem;
+    width: 2.35rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article-container .content-text  .articleAudio .AudioInfo p{
+    font-family: PingFangSC-Light;
+    color: #888888;
+    font-size: .14rem;
+    height: .17rem;
+    padding-top: 0.01rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article-container  .articleAudio .AudioInfo p:nth-child(2) span {
+    font-size: 0.13rem;
+    /*margin-right: 0.12rem;*/
+    font-family: PingFangSC-Light;
+    color: #BBBBBB;
+}
+
+.article-container .content-text  .articleAudio .progress{
+    /*border: 0.01rem solid transparent;*/
+    border-radius: 0.16em;;
+    width: 100%;
+    height: 0.02rem;
+    overflow: hidden;
+    margin-top: -0.02rem;
+}
+.article-container .content-text  .articleAudio .progress div {
+    height: 100%;
+    background-color: #E3B795;
+    /*border-radius: 0.25rem;*/
+    width: 0%;
+    transition: width 0.2s;
+}
+
+
+*{
+    font-size: 14px;
+}
+p{
+    margin: 0;
+}
+.item{
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    padding-bottom: 0.1rem;
+    padding-top: 0.1rem;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+}
+.item .item_ul{
+    margin: 0;
+    padding: 0;
+    item-style-type: none;
+}
+.item .item_ul li{
+    margin: .1rem .12rem;
+    padding: .1rem .12rem;
+    background: #fff;
+    list-style: none;
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+}
+.item .item_ul .title{
+    font-family: PingFangSC-Medium;
+    height: .22rem;
+    line-height: .22rem;
+    text-align: left;
+    font-size: .16rem;
+    color: #52321D;
+    padding-bottom: 0.09rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    letter-spacing: 0;
+}
+.item .nameTime{
+    margin-bottom: .1rem;
+}
+.item .nameTime .label{
+    height: .16rem;
+    font-size: .11rem;
+    line-height: .16rem;
+    color: #aaa;
+    letter-spacing: 0.0009rem;
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    border: .01rem solid #aaa;
+    padding-left: .05rem;
+    padding-right: .05rem;
+}
+.item .nameTime .time{
+    font-family: PingFangSC-Regular;
+    font-size: .12rem;
+    color: #888888;
+    line-height: 0.17rem;
+    margin-left: 0.09rem;
+}
+.item .item_ul li img{
+    height: 1.6rem;
+    width: 100%;
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+}
+.item .item_ul .name{
+    height: .18rem;
+    line-height: .18rem;
+    font-size: .13rem;
+    font-family: PingFangSC-Regular;
+    color: #666666;
+    margin-bottom: .11rem;
+    margin-top: 0.09rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.item .fullbox{
+    text-align: right;
+}
+.item .full{
+    font-family: PingFangSC-Regular;
+    font-size: .13rem;
+    color: #B37A55;
+    margin-top: .11rem;
+    margin-bottom: .1rem;
+}/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/**/
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
